@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/jpg" href="images/favicon.jpg">
+    <title>Movie Zone</title>
+</head>
+
+<body>
+    <section class=" w-75 mx-auto p-5">
+        <h1 class="title mx-auto p-2 rounded shadow mb-4 ">Movie Zone</h1>
+
+        <div class="mb-4">
+            <label for="input-form" class="label mb-2">Movie Name</label>
+            <input type="text" class="form-control" id="movieName" placeholder="Enter the movie Name">
+        </div>
+        <div class="mb-4">
+            <label for="input-form" class="label mb-2">Author / Director</label>
+            <input type="text" class="form-control" id="movieAuthor" placeholder="Enter the Author or Director">
+        </div>
+        <label for="input-form" class="label mb-2">Movie Category</label>
+        <select class="form-control mb-4" id="movieCategory" aria-label="Default select example">
+            <option selected disabled hidden>Choose movie category</option>
+            <option value="Drama">Drama</option>
+            <option value="Horror">Horror</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Action">Action</option>
+        </select>
+        <div class="mb-4">
+            <label for="input-form" class="label mb-2">Description</label>
+            <textarea class="form-control" placeholder="Enter movie description" id="movieDescription"></textarea>
+        </div>
+        <div class="mb-4">
+            <label for="formFile" class="label">Movie Image</label>
+            <input class="form-control" type="file" id="movieImage">
+        </div>
+
+        <button class="btn" id="addButton" onclick="addMovie()">Add Movie</button>
+        <button class="btn d-none" id="updateButton" onclick="updateMovie()">Update Movie Data</button>
+
+    </section>
+
+    <section class=" w-75 mx-auto p-5">
+        <div class="mb-4">
+            <label for="input-form" class="label mb-2">Search for the movie</label>
+            <input type="search" class="form-control" id="movieName" placeholder="Search" oninput="searchMovie(this)">
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row g-4" id="rowData">
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

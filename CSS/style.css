@@ -1,0 +1,104 @@
+body {
+    
+    background-image: url(/images/background.png); 
+    
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+.title {
+    color: #F59E0B;
+    width: fit-content;
+}
+
+.label {
+    color: #F59E0B;
+}
+
+.form-control {
+    background-color: #111C2B;
+    color: #F59E0B;
+    border: solid 2px #F59E0B;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.form-control::placeholder {
+    color: #f59f0b7f;
+}
+
+.form-control:hover,.form-control:focus{
+    background-color: #111C2B;
+    color: #F59E0B;
+    border: solid 2px #F59E0B;
+    box-shadow: 2px 2px #F59E0B;
+    transition: 0.4s;
+}
+
+#movieImage[type="file"]::file-selector-button {
+    background-color: #F59E0B;
+    color: #111C2B;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+
+#movieImage[type="file"]:focus {
+    background-color: #111C2B;
+    color: #F59E0B;
+    border: solid 2px #F59E0B;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.btn{
+     background-color: #F59E0B;
+    color: #111C2B; 
+    border: #F59E0B solid 2px;
+    border-radius: 4px;
+}
+.btn:hover , .update-btn:hover{
+    background-color: #111C2B;
+    color: #F59E0B;
+    border: 3px solid #F59E0B ;
+    box-shadow: 2px 2px #F59E0B;
+    transition: 0.2s;
+}
+.card-body{
+    background-color: #111C2B;
+    color:  #bbb7b7; 
+    border: 3px solid #F59E0B ;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+    
+}
+.card-body:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 25px rgba(255, 165, 0, 0.2); 
+}
+.card-Name{
+    color: #F59E0B; 
+}
+.update-btn{
+    background-color: #F59E0B;
+    color: #111C2B; 
+    border: #F59E0B solid 2px;
+    border-radius: 4px;
+
+}
+.delete-btn{
+    background-color: #db1515fa;
+    color: #111C2B; 
+    border: #db1515fa solid 2px;
+    border-radius: 4px;
+}
+.delete-btn:hover{
+    background-color: #111C2B;
+    color: #db1515fa;
+    border: 3px solid #db1515fa ;
+    box-shadow: 2px 2px #db1515fa;
+    transition: 0.2s;
+}
